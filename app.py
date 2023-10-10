@@ -58,7 +58,7 @@ elif app_mode == 'Prediction':
 
         # load the train model
         # with open('./xgb_model.pkl', 'rb') as rf:
-        model = pickle.load(open('./xgb_model.pkl', 'rb'))
+        model = pickle.load(open('./linear_model.pkl', 'rb'))
 
         def predict(OverallQual, GrLivArea, TotalBsmtSF, GarageCars, AgeBuilt, BsmtFinSF1, LotArea, OverallCond):
             lists = [OverallQual, GrLivArea, TotalBsmtSF, GarageCars, AgeBuilt, BsmtFinSF1, LotArea, OverallCond]
